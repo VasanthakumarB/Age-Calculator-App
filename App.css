@@ -27,7 +27,12 @@
 .App-link {
   color: #61dafb;
 }
-
+input.filled {
+  border-color: red; /* Change to your desired border color */
+}
+h6.txt{
+  color:red;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -74,8 +79,8 @@ input{
   border: 0.5px solid  hsl(0, 0%, 86%);
   outline: none;
 }
-label{
-  font-weight: none;
+h6{
+  text-align: justify;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: hsl(259, 100%, 65%);
@@ -95,6 +100,7 @@ button{
 }
 button:hover{
   background-color: black;
+  transition: 0.5s ease-in;
 }
 input:focus{
   border: 0.5px solid #864bff;
@@ -105,10 +111,17 @@ p.error{
   color: hsl(0, 100%, 67%);
   font-style: italic;
   margin: 5px 0;
+  text-align: justify;
+  display: none;
 }
 .result h1{
+  text-align: justify;
   font-size: 60px;
   font-style: italic;
+  font-weight: bolder;
+}
+input.error {
+  border-color: red;
 }
 .result span{
   color:#864bff
@@ -131,10 +144,8 @@ p.error{
     border-bottom-right-radius: 50%;
     position: relative;
   }
-  label{
-    font-size: 10.72px;
-  }
   .result h1{
+    margin-left: 1px;
     font-size: 45px;
     font-style: italic;
   }
@@ -147,4 +158,5 @@ p.error{
   .result{
     margin-top: 40px;
   }
+  
 }
